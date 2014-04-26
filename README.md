@@ -1,4 +1,4 @@
-#App of Things
+#CI&T App of Things
 
 
 ## CI&T App Of Things Project
