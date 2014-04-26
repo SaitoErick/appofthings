@@ -1,0 +1,36 @@
+<!DOCTYPE tiles-definitions PUBLIC  
+        "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"  
+        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+
+	<definition name="/grupoProduto/create" extends="default">
+		<put-attribute name="title" value="SGP" />
+		<put-attribute name="navegation" value="Grupo de Produto > Cadastrar" />
+		<put-attribute name="body" value="/WEB-INF/view/grupoProduto/create.jsp" />
+	</definition>
+	
+	<definition name="/grupoProduto/list" extends="default">
+		<put-attribute name="title" value="SGP" />
+		<put-attribute name="navegation" value="Grupo de Produto > Listar" />
+		<put-attribute name="body" value="/WEB-INF/view/grupoProduto/list.jsp" />
+	</definition>
+	
+	<definition name="/grupoProduto/view" extends="default">
+		<put-attribute name="title" value="SGP" />
+		<put-attribute name="navegation" value="Grupo de Produto > Visualizar" />
+		<put-attribute name="body" value="/WEB-INF/view/grupoProduto/view.jsp" />
+	</definition>
+	
+	<definition name="/grupoProduto/update" extends="default">
+		<put-attribute name="title" value="SGP" />
+		<put-attribute name="navegation" value="Grupo de Produto > Atualizar" />
+		<put-attribute name="body" value="/WEB-INF/view/grupoProduto/update.jsp" />
+	</definition>
+	
+	<definition name="/grupoProduto/delete" extends="default">
+		<put-attribute name="title" value="SGP" />
+		<put-attribute name="navegation" value="Grupo de Produto > Excluir" />
+		<put-attribute name="body" value="/WEB-INF/view/grupoProduto/delete.jsp" />
+	</definition>
+
+</tiles-definitions>

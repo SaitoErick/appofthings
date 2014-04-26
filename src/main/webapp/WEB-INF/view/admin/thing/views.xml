@@ -1,0 +1,36 @@
+<!DOCTYPE tiles-definitions PUBLIC  
+        "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"  
+        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+
+	<definition name="/admin/thing/form/create" extends="default">
+		<put-attribute name="title" value="CIT App Of Things" />
+		<put-attribute name="navigation" value="Thing > Create" />
+		<put-attribute name="body" value="/WEB-INF/view/admin/thing/create.jsp" />
+	</definition>
+	
+	<definition name="/admin/thing/form/list" extends="default">
+		<put-attribute name="title" value="CIT App Of Things" />
+		<put-attribute name="navigation" value="Thing > List" />
+		<put-attribute name="body" value="/WEB-INF/view/admin/thing/list.jsp" />
+	</definition>
+	
+	<definition name="/admin/thing/form/view" extends="default">
+		<put-attribute name="title" value="CIT App Of Things" />
+		<put-attribute name="navigation" value="Thing > View" />
+		<put-attribute name="body" value="/WEB-INF/view/admin/thing/view.jsp" />
+	</definition>
+	
+	<definition name="/admin/thing/form/update" extends="default">
+		<put-attribute name="title" value="CIT App Of Things" />
+		<put-attribute name="navigation" value="Thing > Update" />
+		<put-attribute name="body" value="/WEB-INF/view/admin/thing/update.jsp" />
+	</definition>
+	
+	<definition name="/admin/thing/form/delete" extends="default">
+		<put-attribute name="title" value="CIT App Of Things" />
+		<put-attribute name="navigation" value="Thing > Delete" />
+		<put-attribute name="body" value="/WEB-INF/view/admin/thing/delete.jsp" />
+	</definition>
+
+</tiles-definitions>

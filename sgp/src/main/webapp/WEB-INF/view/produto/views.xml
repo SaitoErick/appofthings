@@ -1,0 +1,36 @@
+<!DOCTYPE tiles-definitions PUBLIC  
+        "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"  
+        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+
+	<definition name="/produto/create" extends="default">
+		<put-attribute name="title" value="SGP" />
+		<put-attribute name="navegation" value="Produto > Cadastrar" />
+		<put-attribute name="body" value="/WEB-INF/view/produto/create.jsp" />
+	</definition>
+	
+	<definition name="/produto/list" extends="default">
+		<put-attribute name="title" value="SGP" />
+		<put-attribute name="navegation" value="Produto > Listar" />
+		<put-attribute name="body" value="/WEB-INF/view/produto/list.jsp" />
+	</definition>
+	
+	<definition name="/produto/view" extends="default">
+		<put-attribute name="title" value="SGP" />
+		<put-attribute name="navegation" value="Produto > Visualizar" />
+		<put-attribute name="body" value="/WEB-INF/view/produto/view.jsp" />
+	</definition>
+	
+	<definition name="/produto/update" extends="default">
+		<put-attribute name="title" value="SGP" />
+		<put-attribute name="navegation" value="Produto > Atualizar" />
+		<put-attribute name="body" value="/WEB-INF/view/produto/update.jsp" />
+	</definition>
+	
+	<definition name="/produto/delete" extends="default">
+		<put-attribute name="title" value="SGP" />
+		<put-attribute name="navegation" value="Produto > Excluir" />
+		<put-attribute name="body" value="/WEB-INF/view/produto/delete.jsp" />
+	</definition>
+
+</tiles-definitions>
