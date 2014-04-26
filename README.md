@@ -1,7 +1,7 @@
 #App of Things
 
 
-## Project Template for use with App Engine Java (SpringMVC + Apache Tiles + Hibernate Validation + Objectify).
+## CI&T App Of Things Project
 
 Requires [Apache Maven](http://maven.apache.org) 3.0 or greater, and JDK 6+ in order to run.
 
