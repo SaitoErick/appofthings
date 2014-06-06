@@ -1,0 +1,122 @@
+th {
+  white-space: nowrap;
+}
+
+body {
+    margin: 0 auto;
+}
+
+.navbar-brand {
+    color: #FFFFFF !important;
+}
+
+.container-fluid {
+    background-color: #20BEC6;
+    /**background-color: #D71F3C;*/
+}
+
+.container-user {
+    color: #FFFFFF;
+    float: right;
+    padding: 15px;
+}
+
+.actions-header {
+  text-align:center;
+  width: 51px;
+}
+
+.fieldset-filter {
+  border: solid 1px #DDD;
+  border-top: none;
+  margin-bottom: 25px;
+  padding: 15px;
+}
+
+.search-container {
+  padding: 50px;
+}
+
+.search-box {
+  margin: 0 auto;
+  width: 450px;
+}
+
+.panel-group {
+    margin: 0 auto;
+    width: 555px;
+}
+
+.room-panel {
+    //border-color: #20BEC6;
+    float: left;
+    margin: 0 10px 10px 0 !important;
+    width: 175px;
+}
+
+.room-panel > .panel-heading {
+    //background-color: #20BEC6 !important;
+}
+
+.fa-thumbs-down, .fa-thumbs-up {
+    float: right;
+}
+
+/** remove unecessary */
+td {
+  vertical-align: middle!important;
+}
+
+.row-details {
+  display: none;
+}
+
+table.table tr {
+  height: 51px;
+}
+
+table.table .form-control {
+  width: 87px;
+}
+
+table.table .form-group {
+  margin:0;
+  padding:0;
+}
+
+table.table .edit-mode {
+  display:none;
+  text-align:center;
+}
+
+table.table .view-mode {
+  display: block;
+  text-align: center;
+}
+table.table th.header-voucher-top {
+  background: #20BEC6;
+  color: #FFFFFF;
+  text-align: center;
+  vertical-align: middle;
+}
+table.table th.header-requisicao-top {
+  background: #FACF68;
+  text-align: center;
+  vertical-align: middle;
+}
+/*table.table th.header-voucher {
+  background: #F0F0F0;
+}*/
+table.table th.header-voucher, table.table th.header-requisicao {
+  background: #EAEAEA;
+  text-align: center;
+}
+table.table .form-control.amount {
+  width: 50px;
+}
+table.table .form-control.dest {
+  width: 92px;
+}
+.navbar-brand {
+  font-size: 24px;
+}

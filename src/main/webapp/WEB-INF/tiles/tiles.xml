@@ -11,5 +11,10 @@
 		<put-attribute name="navigation" value="" />
 		<put-attribute name="footer" value="/WEB-INF/view/commons/footer.jsp" />
 	</definition>
+	
+	<definition name="raw" template="/WEB-INF/view/layout/raw.jsp">
+		<put-attribute name="title" value="Default Layout" />
+		<put-attribute name="body" value="" />
+	</definition>
 
 </tiles-definitions>  

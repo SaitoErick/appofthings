@@ -8,5 +8,10 @@
 		<put-attribute name="navigation" value="Dashboard" />
 		<put-attribute name="body" value="/WEB-INF/view/index.jsp" />
 	</definition>
+	
+	<definition name="client" extends="raw">
+		<put-attribute name="title" value="CIT App of Things - Client" />
+		<put-attribute name="body" value="/WEB-INF/view/client.jsp" />
+	</definition>
 
 </tiles-definitions>
