@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.ciandt.appofthings.domain.RoomStatus;
 import com.ciandt.appofthings.service.RoomStatusService;
+import com.ciandt.appofthings.service.RoomStatusHistoryService;
 import com.google.gson.Gson;
 
 @Controller
@@ -20,6 +21,8 @@ public class RoomActivityController {
 
 	@Autowired
 	private RoomStatusService roomStatusService;
+	@Autowired
+	private RoomStatusHistoryService roomStatusHistoryService;
 
 	@RequestMapping(method = RequestMethod.GET)
 	public @ResponseBody
@@ -33,7 +36,35 @@ public class RoomActivityController {
 
 		return callback + " (" + jsonResponse + ")";
 	}
+	
+	@RequestMapping(value = "/history/{room}/{limit}", method = RequestMethod.GET)
+	public @ResponseBody
+	String history(
+			@RequestParam(value = "callback", required = false, defaultValue = "") String callback, @PathVariable("room") String room, @PathVariable("limit") int limit) {
+		Gson gson = new Gson();
+		String jsonResponse = gson.toJson(roomStatusHistoryService.findHistory(room,limit));
 
+		if (callback.isEmpty())
+			return jsonResponse;
+
+		return callback + " (" + jsonResponse + ")";
+	}
+
+	
+	@RequestMapping(value = "/{id}", method = RequestMethod.GET)
+	public @ResponseBody
+	String findById(
+			@RequestParam(value = "callback", required = false, defaultValue = "") String callback, @PathVariable("id") Long id) {
+		Gson gson = new Gson();
+		String jsonResponse = gson.toJson(roomStatusService.findById(id));
+
+		if (callback.isEmpty())
+			return jsonResponse;
+
+		return callback + " (" + jsonResponse + ")";
+	}
+	
+	
 	@RequestMapping(value = "/{base}", method = RequestMethod.GET)
 	public @ResponseBody
 	List<RoomStatus> listAllByBase(@PathVariable String base) {

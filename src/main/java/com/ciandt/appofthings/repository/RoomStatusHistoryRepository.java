@@ -26,5 +26,10 @@ public class RoomStatusHistoryRepository {
 	public List<RoomStatusHistory> findAll() {
 		return ofy().load().type(RoomStatusHistory.class).list();
 	}
+	
+	public List<RoomStatusHistory> findHistory(String room, int limit) {
+		
+		return ofy().load().type(RoomStatusHistory.class).filter("local.room", room).limit(limit).list();
+	}
 
 }

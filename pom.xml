@@ -6,7 +6,7 @@
 	<packaging>war</packaging>
 	<groupId>com.ciandt.appofthings</groupId>
 	<artifactId>appofthings</artifactId>
-	<version>v001</version>
+	<version>v002</version>
 	<name>Ciandt App of Things</name>
 	<developers>
 		<developer>
@@ -18,7 +18,7 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<java-version>1.7</java-version>
-		<appengine.target.version>1.9.2</appengine.target.version>
+		<appengine.target.version>1.9.20</appengine.target.version>
 		<org.springframework-version>3.2.3.RELEASE</org.springframework-version>
 		<org.springframework.security-version>3.1.4.RELEASE</org.springframework.security-version>
 		<org.aspectj-version>1.7.3</org.aspectj-version>
@@ -204,7 +204,7 @@
 			<artifactId>guava</artifactId>
 			<version>14.0.1</version>
 		</dependency>
-		
+
 		<!-- Test Dependencies -->
 		<dependency>
 			<groupId>junit</groupId>
@@ -266,9 +266,6 @@
 				<groupId>com.google.appengine</groupId>
 				<artifactId>appengine-maven-plugin</artifactId>
 				<version>${appengine.target.version}</version>
-                <configuration>
-                	<oauth2>false</oauth2>
-                </configuration>
 			</plugin>
 		</plugins>
 	</build>

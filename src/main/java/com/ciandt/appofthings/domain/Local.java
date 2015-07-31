@@ -1,12 +1,10 @@
 package com.ciandt.appofthings.domain;
 
-import com.googlecode.objectify.annotation.Cache;
 import com.googlecode.objectify.annotation.Embed;
 import com.googlecode.objectify.annotation.Entity;
 import com.googlecode.objectify.annotation.Id;
 import com.googlecode.objectify.annotation.Index;
 
-@Cache
 @Index
 @Embed
 @Entity
@@ -15,6 +13,7 @@ public class Local {
 	@Id
 	private Long id;
 	private String base;
+	@Index
 	private String building;
 	private String floor;
 	private String room;

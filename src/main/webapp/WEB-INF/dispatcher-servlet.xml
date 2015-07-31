@@ -43,9 +43,9 @@
 	</bean>
 
 	<!-- Bean para mapear os erros para pagina de excecao do aplicativo -->
-	<bean
+	<!--bean
 		class="org.springframework.web.servlet.handler.SimpleMappingExceptionResolver"
-		p:defaultErrorView="errorPage" />
+		p:defaultErrorView="errorPage" /-->
 
 	<bean class="java.util.ArrayList" id="sobreApp">
 		<constructor-arg>

@@ -11,7 +11,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 	<title><tiles:insertAttribute name="title" defaultValue="" /></title>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="CIT App of Things">
     <meta name="author" content="Marcos Vidolin">

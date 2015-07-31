@@ -11,7 +11,10 @@ $(document).ready(function () {
     $.getJSON(aotAPI, {
         format: "json"
     }).done(function(data) {
-            addHtml(data);
+    	data.sort(function(a, b) {
+            return compareStrings(a.local.room, b.local.room);
+        });
+        addHtml(data);
     });
 });
 
@@ -27,9 +30,9 @@ function addHtml(data) {
         index++;
 
         //definição do icone de sinalização da sala
-        var iconClass = "fa fa-thumbs-down";
+        var iconClass = "fa fa-thumbs-up";
         if (value.busy) {
-            iconClass = "fa fa-thumbs-up";
+            iconClass = "fa fa-thumbs-down";
         };
 
         // Collapsable
@@ -40,6 +43,7 @@ function addHtml(data) {
     });
 
     $('#search-input').prop('disabled', false);
+    cardColor();
 }
 
 $('#search-input').keyup(function() {
@@ -96,4 +100,25 @@ function removeEmptyStringsFromArray(array) {
     }
 
     return newArray;
+}
+
+function cardColor() {
+    $('.fa-thumbs-up').parents('.panel-heading').each(function() {
+       $(this).addClass('green');
+       $(this).parents('.panel-primary').addClass('green');
+    });
+}
+
+function cardColor() {
+    $('.fa-thumbs-up').parents('.panel-heading').each(function() {
+       $(this).addClass('green');
+       $(this).parents('.panel-primary').addClass('green');
+    });
+}
+
+function compareStrings(a, b) {
+	a = a.toLowerCase();
+	b = b.toLowerCase();
+
+	return (a < b) ? -1 : (a > b) ? 1 : 0;
 }

@@ -16,7 +16,7 @@ import com.ciandt.appofthings.service.RoomStatusHistoryService;
 @RequestMapping(value = "/activity", consumes = "application/json", produces = "application/json")
 public class ArduinoActivityController {
 
-	private static final Logger LOGGER = Logger
+	private static final Logger log = Logger
 			.getLogger(ArduinoActivityController.class.getName());
 
 	@Autowired
@@ -25,7 +25,7 @@ public class ArduinoActivityController {
 	@RequestMapping(method = RequestMethod.POST)
 	public @ResponseBody
 	ArduinoActivity activity(@RequestBody ArduinoActivity arduinoActivity) {
-		LOGGER.info("Saving activity");
+		log.info("Saving activity");
 		roomStatusActivityService.saveActivityFrom(arduinoActivity);
 		return arduinoActivity;
 	}

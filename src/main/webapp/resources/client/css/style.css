@@ -120,3 +120,12 @@ table.table .form-control.dest {
 .navbar-brand {
   font-size: 24px;
 }
+
+.panel-primary.green {
+    border-color: #008000;
+}
+
+.room-panel > .panel-heading.green {
+    background-color: #008000;
+    border-color: #008000;
+}

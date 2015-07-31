@@ -5,7 +5,6 @@ import javax.xml.bind.annotation.XmlRootElement;
 import org.codehaus.jackson.annotate.JsonIgnore;
 import org.codehaus.jackson.annotate.JsonProperty;
 
-import com.googlecode.objectify.annotation.Cache;
 import com.googlecode.objectify.annotation.Embed;
 import com.googlecode.objectify.annotation.Entity;
 import com.googlecode.objectify.annotation.Id;
@@ -14,7 +13,6 @@ import com.googlecode.objectify.annotation.Index;
 @XmlRootElement
 @Embed
 @Index
-@Cache
 @Entity
 public class Sensor {
 

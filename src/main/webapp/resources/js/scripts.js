@@ -15,22 +15,6 @@ $(document).ready(function () {
             addHtml(data);
         });
 });
-var data = [
-    { busy: false, local: { room: "Zezinho", base: "CPS", building: "23A", floor: "2" } },
-    { busy: true, local: { room: "Huguinho", base: "CPS", building: "23A", floor: "2" } },
-    { busy: false, local: { room: "Mr. Miagui", base: "CPS", building: "23A", floor: "2" } },
-    { busy: true, local: { room: "Mr. Mario", base: "CPS", building: "23A", floor: "2" } },
-    { busy: true, local: { room: "Cebolinha", base: "CPS", building: "23A", floor: "2" } },
-    { busy: false, local: { room: "Zezinho", base: "CPS", building: "23A", floor: "2" } },
-    { busy: true, local: { room: "Zezinho", base: "CPS", building: "23A", floor: "2" } },
-    { busy: true, local: { room: "Zezinho", base: "CPS", building: "23A", floor: "2" } },
-    { busy: true, local: { room: "Zezinho", base: "CPS", building: "23A", floor: "2" } },
-    { busy: true, local: { room: "Zezinho", base: "CPS", building: "23A", floor: "2" } },
-    { busy: true, local: { room: "Zezinho", base: "CPS", building: "23A", floor: "2" } },
-    { busy: true, local: { room: "Zezinho", base: "CPS", building: "23A", floor: "2" } },
-    { busy: true, local: { room: "Zezinho", base: "CPS", building: "23A", floor: "2" } }
-];
-//addHtml(data);
 
 function addHtml(data) {
     $('#accordion').empty();
@@ -44,9 +28,9 @@ function addHtml(data) {
         index++;
 
         //definição do icone de sinalização da sala
-        var iconClass = "fa fa-thumbs-down";
+        var iconClass = "fa fa-thumbs-up";
         if (value.busy) {
-            iconClass = "fa fa-thumbs-up";
+            iconClass = "fa fa-thumbs-down";
         };
 
         // Collapsable

@@ -45,6 +45,10 @@ public class RoomStatusHistoryService {
 	public List<RoomStatusHistory> findAll() {
 		return repository.findAll();
 	}
+	
+	public List<RoomStatusHistory> findHistory(String room, int limit) {
+		return repository.findHistory(room, limit);
+	}
 
 	/**
 	 * Retorna a sola em que um sensor se encontr.
